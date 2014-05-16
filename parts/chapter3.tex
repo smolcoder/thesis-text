@@ -1,7 +1,156 @@
 \chapter{Результаты} 
 \label{results}
 
+% \begin{table}[h] 
+% \caption{Performance After Post Filtering} % title name of the table 
+% \centering % centering table 
+% \begin{tabular}{l c c rrrrrrr} % creating 10 columns 
+% \hline\hline % inserting double-line 
+%  Audio &Audibility & Decision &\multicolumn{7}{c}{Sum of Extracted Bits} 
+% \\ [0.5ex] 
+% \hline % inserts single-line 
+%  
+% % Entering 1st row 
+%  & &soft &1 & $-1$ & 1 & 1 & $-1$ & $-1$ & 1 \\[-1ex] 
+% \raisebox{1.5ex}{Police} & \raisebox{1.5ex}{5}
+%    &hard & 2 & $-4$ & 4 & 4 & $-2$ & $-4$ & 4 \\[1ex] 
+%  
+% % Entering 2nd row 
+% & &soft & 1 & $-1$ & 1 & 1 & $-1$ & $-1$ & 1 \\[-1ex] 
+% \raisebox{1.5ex}{Beethoven} & \raisebox{1.5ex}{5}& hard 
+% &8 & $-8$ & 2 & 8 & $-8$ & $-8$ & 6 \\[1ex] 
+%  
+% % Entering 3rd row 
+% & &soft & 1 & $-1$ & 1 & 1 & $-1$ & $-1$ & 1 \\[-1ex] 
+% \raisebox{1.5ex}{Metallica} & \raisebox{1.5ex}{5}& hard 
+% &4 & $-8$ & 8 & 4 & $-8$ & $-8$ & 8 \\[1ex] 
+%  
+% % [1ex] adds vertical space 
+% \hline % inserts single-line 
+% \end{tabular} 
+% \label{tab:PPer} 
+% \end{table}
+
 Тут будут результаты.
+
+\begin{table}[ht]
+\centering
+\begin{center}
+\captionsetup{justification=centering}
+ \caption{Таблица с результатами запуска модификаций алгоритмов 2-NN, 18-NN и CBDC с применением перехода к исполнителю и без. T = 2, persong-статистика}
+\end{center}
+\begin{tabular}{l c c ccc}
+\hline\hline
+ Алгоритм & Метрика & Исп.ПИ. & Precision & Recall & F-measure
+\\ [0.5ex]
+    \hline
+
+    
+    & & нет&$0.418$ & $0.452$ & $0.423$ \\[-1.5ex]
+    \raisebox{1ex}{2NN(fir)} & \raisebox{1ex}{cos}
+    & да &$0.607$ & $0.724$ & $0.644$ \\[2ex]
+
+    & & нет&$0.549$ & $0.645$ & $0.580$ \\[-1.5ex]
+    \raisebox{1ex}{18NN(fir)} & \raisebox{1ex}{cos}
+    & да &$0.623$ & $0.735$ & $0.660$ \\[2ex]
+
+    & & нет&$0.451$ & $0.464$ & $0.448$ \\[-1.5ex]
+    \raisebox{1ex}{2NN(fir)} & \raisebox{1ex}{euc}
+    & да &$0.574$ & $0.686$ & $0.610$ \\[2ex]
+
+    & & нет&$0.516$ & $0.604$ & $0.545$ \\[-1.5ex]
+    \raisebox{1ex}{18NN(fir)} & \raisebox{1ex}{euc}
+    & да &$0.574$ & $0.686$ & $0.610$ \\[2ex]
+
+    & & нет&$0.500$ & $0.587$ & $0.528$ \\[-1.5ex]
+    \raisebox{1ex}{2NN(wei)} & \raisebox{1ex}{cos}
+    & да &$0.615$ & $0.735$ & $0.654$ \\[2ex]
+
+    & & нет&$0.533$ & $0.612$ & $0.558$ \\[-1.5ex]
+    \raisebox{1ex}{18NN(wei)} & \raisebox{1ex}{cos}
+    & да &$0.615$ & $0.735$ & $0.654$ \\[2ex]
+
+    & & нет&$0.516$ & $0.555$ & $0.510$ \\[-1.5ex]
+    \raisebox{1ex}{2NN(wei)} & \raisebox{1ex}{euc}
+    & да &$0.582$ & $0.694$ & $0.619$ \\[2ex]
+
+    & & нет&$0.516$ & $0.587$ & $0.534$ \\[-1.5ex]
+    \raisebox{1ex}{18NN(wei)} & \raisebox{1ex}{euc}
+    & да &$0.582$ & $0.694$ & $0.619$ \\[2ex]
+
+    & & нет&$0.246$ & $0.257$ & $0.231$ \\[-1.5ex]
+    \raisebox{1ex}{CBDC} & \raisebox{1ex}{euc}
+    & да &$0.287$ & $0.342$ & $0.304$ \\[2ex]
+
+    & & нет&$0.303$ & $0.298$ & $0.291$ \\[-1.5ex]
+    \raisebox{1ex}{CBDC} & \raisebox{1ex}{cos}
+    & да &$0.377$ & $0.385$ & $0.368$ \\[2ex]
+
+    \hline
+\end{tabular}
+\label{tab:PPer}
+\end{table}
+
+фывафывафы вафыва фыв
+
+\begin{table}[ht]
+\centering
+\begin{center}
+\captionsetup{justification=centering}
+ \caption{Таблица с результатами запуска модификаций алгоритмов 2-NN, 18-NN и CBDC с применением перехода к исполнителю и без. T = 2, perword-статистика}
+\end{center}
+\begin{tabular}{l c c ccc}
+\hline\hline
+ Алгоритм & Метрика & Исп.ПИ. & Precision & Recall & F-measure
+\\ [0.5ex]
+    \hline
+
+    
+    & & нет&$0.233$ & $0.306$ & $0.245$ \\[-1.5ex]
+    \raisebox{1ex}{2NN(fir)} & \raisebox{1ex}{cos}
+    & да &$0.309$ & $0.322$ & $0.315$ \\[2ex]
+
+    & & нет&$0.236$ & $0.306$ & $0.245$ \\[-1.5ex]
+    \raisebox{1ex}{18NN(fir)} & \raisebox{1ex}{cos}
+    & да &$0.309$ & $0.322$ & $0.315$ \\[2ex]
+
+    & & нет&$0.205$ & $0.281$ & $0.236$ \\[-1.5ex]
+    \raisebox{1ex}{2NN(fir)} & \raisebox{1ex}{euc}
+    & да &$0.287$ & $0.308$ & $0.270$ \\[2ex]
+
+    & & нет&$0.250$ & $0.281$ & $0.236$ \\[-1.5ex]
+    \raisebox{1ex}{18NN(fir)} & \raisebox{1ex}{euc}
+    & да &$0.287$ & $0.308$ & $0.270$ \\[2ex]
+
+    & & нет&$0.223$ & $0.207$ & $0.202$ \\[-1.5ex]
+    \raisebox{1ex}{2NN(wei)} & \raisebox{1ex}{cos}
+    & да &$0.369$ & $0.416$ & $0.391$ \\[2ex]
+
+    & & нет&$0.223$ & $0.207$ & $0.202$ \\[-1.5ex]
+    \raisebox{1ex}{18NN(wei)} & \raisebox{1ex}{cos}
+    & да &$0.369$ & $0.416$ & $0.391$ \\[2ex]
+
+    & & нет&$0.222$ & $0.245$ & $0.221$ \\[-1.5ex]
+    \raisebox{1ex}{2NN(wei)} & \raisebox{1ex}{euc}
+    & да &$0.293$ & $0.286$ & $0.289$ \\[2ex]
+
+    & & нет&$0.222$ & $0.245$ & $0.221$ \\[-1.5ex]
+    \raisebox{1ex}{18NN(wei)} & \raisebox{1ex}{euc}
+    & да &$0.293$ & $0.286$ & $0.289$ \\[2ex]
+
+    & & нет&$0.307$ & $0.395$ & $0.340$ \\[-1.5ex]
+    \raisebox{1ex}{CBDC} & \raisebox{1ex}{euc}
+    & да &$0.359$ & $0.392$ & $0.375$ \\[2ex]
+
+    & & нет&$0.329$ & $0.282$ & $0.302$ \\[-1.5ex]
+    \raisebox{1ex}{CBDC} & \raisebox{1ex}{cos}
+    & да &$0.327$ & $0.388$ & $0.351$ \\[2ex]
+
+    \hline
+\end{tabular}
+\label{tab:PPer}
+\end{table}
+
 
 \section{Построение обучающей выборки с русской музыкой}
 \section{Выбор параметров алгоритмов}
