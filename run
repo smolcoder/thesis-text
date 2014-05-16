@@ -1,0 +1,17 @@
+#!/bin/sh
+    cd pic
+    for i in *.mp
+    do
+        if [[ -f "$i" ]]
+        then
+            mpost $i
+        fi
+    done
+    cd ..
+
+    pdflatex -synctex=1 -interaction=nonstopmode thesis.tex
+    bibtex8 -H thesis
+    pdflatex -synctex=1 -interaction=nonstopmode thesis.tex
+    pdflatex -synctex=1 -interaction=nonstopmode thesis.tex
+
+
