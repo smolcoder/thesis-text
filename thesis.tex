@@ -7,13 +7,12 @@
 \usepackage[section]{algorithm}
 \usepackage{algorithmic}
 \usepackage[english,russian]{babel}
-\usepackage{framed}
-\usepackage{nomencl}
 
-\usepackage[backend=bibtex,bibencoding=utf8,sorting=none,sortcites=true,bibstyle=sty/gost71,maxnames=99,citestyle=numeric-comp,babel=other]{biblatex}
+\usepackage[backend=bibtex8,bibencoding=utf8,sorting=none,sortcites=true,bibstyle=sty/gost71,maxnames=99,citestyle=numeric-comp,babel=other]{biblatex
+}
 
 \defbibenvironment{bibliography}
-  {\listoffigures
+  {\list
      {\printfield[labelnumberwidth]{labelnumber}.}
      {\setlength{\labelwidth}{2\labelnumberwidth}%
       \setlength{\leftmargin}{\labelwidth}%
@@ -25,12 +24,13 @@
   {\endlist}
   {\item}
 
+  
 \usepackage[utf8]{inputenc}
 \usepackage{csquotes}
 %\usepackage{expdlist}
 %\usepackage[nottoc,notbib]{tocbibind}
 \usepackage[pdftex]{graphicx}
-\usepackage{graphicx}
+% \usepackage{graphicx}
 \graphicspath{{pic/}}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -192,8 +192,9 @@
 \input{parts/chapter1.tex}
 \input{parts/chapter2.tex}
 \input{parts/chapter3.tex}
-\input{parts/approbation.tex}
+% \input{parts/approbation.tex}
 
+\nocite{*}
 \printbibliography
 
 \end{document}
